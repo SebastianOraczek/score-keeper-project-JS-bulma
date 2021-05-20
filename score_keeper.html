@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="score.keeper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <title>Score Keeper</title>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1576617497557-22895ee5930b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                    alt="Ping Pong">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Ping Pong Score Keeper
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <div class="columns">
+                                    <div class="column">
+                                        <input class="input is-rounded" id="p1Input" type="text" placeholder="Player1">
+                                    </div>
+                                    <div class="column">
+                                        <input class="input is-rounded" id="p2Input" type="text" placeholder="Player2">
+                                    </div>
+                                    <div class="column is-narrow">
+                                        <button class="button is-warning is-rounded" id="changeButton">Change
+                                            Players</button>
+                                    </div>
+                                </div>
+                                <div class="columns">
+                                    <div class="column">
+                                        <p id="winnerMsg" class="has-text-danger"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span>
+                                </h1>
+                                <p class="subtitle">Use the buttons below to keep score.</p>
+                                <label for="playTo" class="label is-inline is-medium">Playing To</label>
+                                <div class="select is-rounded">
+                                    <select id="playTo">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button class="button is-primary card-footer-item" id="p1Button">+1 Player One</button>
+                            <button class="button is-info card-footer-item" id="p2Button">+1 Player Two</button>
+                            <button class="button is-danger card-footer-item" id="reset">Reset</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="score_keeper.js"></script>
+</body>
+
+</html>

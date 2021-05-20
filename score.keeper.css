@@ -1,0 +1,9 @@
+.select {
+    transform: translateY(-3px);
+}
+
+#winnerMsg {
+    text-align: center;
+    font-size: 1.15em;
+    transform: translateY(8px);
+}
